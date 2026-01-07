@@ -23,12 +23,12 @@ namespace App1
 
         }
 
-        public string Skill 
+        public string Skill
         {
             get
             {
                 return enum HouseholdSkill { Cooking, Cleaning, Laundry, Gardening, ChildCare }
-    }
+            }
             set
             {
                 enum HouseholdSkill = value;
@@ -38,7 +38,6 @@ namespace App1
         override public string DescribeRobot()
         {
             return "I am a Household Robot\nI can help with chores around the house \n\nHousehold Robot Skills: \n" + Skill + "\n\n" + Robot.DisplayBatteryInformation();
-            ;
         }
     }
 }

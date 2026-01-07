@@ -12,7 +12,8 @@ using Windows.System;
 
 namespace App1
 {
-    class Class1
+    // class is abstract so the abstract method below stops shooting errors
+    public abstract class Class1
     {
 
 
@@ -33,7 +34,6 @@ namespace App1
             return "Capacity: " + powercapacityKWH + "Current Power: " + currentpowerKWH + "Battery Level: " + GetBatteryPercentage() + "%";
         }
         public abstract string DescribeRobot();
-
 
         public override string ToString()
         {
