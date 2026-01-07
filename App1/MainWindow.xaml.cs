@@ -21,11 +21,15 @@ namespace App1
     /// <summary>
     /// An empty window that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainWindow : Window
+    public partial class MainWindow : Window    
     {
         public MainWindow()
         {
             InitializeComponent();
         }
+
+        public enum HouseholdSkill { Cooking, Cleaning, Laundry, Gardening, ChildCare }
+        public enum DeliveryMode { Walking, Driving, Flying }
+
     }
 }

@@ -14,8 +14,7 @@ namespace App1
 {
     class Class1
     {
-        public enum HouseholdSkill { Cooking, Cleaning, Laundry, Gardening, ChildCare }
-        public enum DeliveryMode { Walking, Driving, Flying }
+
 
         //properties
         public string robotname { get; set; }
@@ -39,60 +38,6 @@ namespace App1
         public override string ToString()
         {
             return robotname + " - [" + robottype + "]";
-        }
-
-        public class HouseholdRobot
-        {
-            public string household;
-
-            public int RobotType
-            {
-                get
-                {
-                    return Rob.robottype;
-                }
-                set
-                {
-                    this._employeeNumber = value;
-                }
-
-            }
-
-            override public string DescribeRobot()
-            {
-                return { "I am a Household Robot\n"}
-                ;
-            }
-        }
-
-        class DeliveryRobot
-        {
-
-
-        }
-    }
-
-    class HouseholdRobot
-    {
-        public string household;
-
-        public int RobotType
-        {
-            get
-            {
-                return .robottype;
-            }
-            set
-            {
-                this._employeeNumber = value;
-            }
-
-        }
-
-        override public string DescribeRobot()
-        {
-            return { "I am a Household Robot\n"}
-            ;
         }
     }
 }

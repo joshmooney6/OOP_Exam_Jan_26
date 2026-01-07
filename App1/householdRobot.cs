@@ -14,18 +14,30 @@ namespace App1
         {
             get
             {
-                return ro.robottype;
+                return Robot.robottype;
             }
             set
             {
-                this._employeeNumber = value;
+                Robot.robottype = "Household Robot";
             }
 
         }
 
+        public string Skill 
+        {
+            get
+            {
+                return enum HouseholdSkill { Cooking, Cleaning, Laundry, Gardening, ChildCare }
+    }
+            set
+            {
+                enum HouseholdSkill = value;
+            }
+        }
+
         override public string DescribeRobot()
         {
-            return { "I am a Household Robot\n"}
+            return "I am a Household Robot\nI can help with chores around the house \n\nHousehold Robot Skills: \n" + Skill + "\n\n" + Robot.DisplayBatteryInformation();
             ;
         }
     }
