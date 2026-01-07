@@ -27,6 +27,9 @@
         <ListBox x:Name="lbxFilters" Grid.Column="0" Grid.Row="1" Margin="5"/>
         <ListBox x:Name="lbxRobots" Grid.Column="1" Grid.Row="1" Margin="5"/>
         <ListBox x:Name="lbxDetails" Grid.Column="2" Grid.Row="1" Margin="5"/>
-        <
+        <TextBlock Text="Filter" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Text="Robot Types" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Text="Robot List" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Grid.Column="2" Grid.Row="2" Height="25" Width="75" Content="Charge"
     </Grid>
 </Window>
